@@ -1,39 +1,45 @@
 import json
+import pickle
 
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
-with open("intents.json") as json_obj:
-    dataset_file = json.load(json_obj)
+# PREPROCESSING
+is_new = True
+with open('vocab.json') as f:
+    rec_vocab = json.load(f)
 
-dataset_dict = {'statement': [], "response": []}
-
-for record in dataset_file['intents']:
-    patterns = record['patterns']
-    for pattern in patterns:
-        dataset_dict['statement'].append(pattern)
-        dataset_dict['response'].append(record["tag"])
-
-dataset_df = pd.DataFrame(dataset_dict)
+dataset_df = pd.read_csv("dataset.csv")
 
 tfidf = TfidfVectorizer(stop_words='english')
 features = tfidf.fit_transform(dataset_df['statement']).toarray()
-vocab = tfidf.vocabulary_
+cur_vocab = tfidf.vocabulary_
 
-# with open("vocab.json", 'w') as f:
-#     json.dump(vocab, f)
+if rec_vocab == cur_vocab:
+    vocab = rec_vocab
+    is_new = False
+else:
+    with open("vocab.json", 'w') as f:
+        json.dump(cur_vocab, f)
+    vocab = cur_vocab
 
-print(vocab)
 
-multi_nb = MultinomialNB()
-multi_nb.fit(features, np.array(dataset_df["response"]))
+# MODEL TRAINING
+if is_new:
+    multi_nb = MultinomialNB()
+    multi_nb.fit(features, np.array(dataset_df["response"]))
 
-with open('vocab.json') as f:
-    vcb = json.load(f)
+    with open('model.pickle', 'wb') as mdl:
+        pickle.dump(multi_nb, mdl)
 
-tfidf = TfidfVectorizer(stop_words='english', vocabulary=vcb)
-vec = tfidf.fit_transform(['i feel kinda sickly'])
+else:
+    with open('model.pickle', 'rb') as mdl:
+        multi_nb = pickle.load(mdl)
 
-print(multi_nb.predict(vec))
+# MODEL PREDICTING
+def predictor(inpt):
+    tfidf = TfidfVectorizer(stop_words='english')
+    tfidf.fit_transform()
+    multi_nb.predict()
