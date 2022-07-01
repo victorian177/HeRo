@@ -1,0 +1,114 @@
+statement,response
+"Hi, Hero.",wake
+"Hello, Hero",wake
+"Hey, Hero",wake
+"Hero, are you there?",wake
+"Good morning, Hero.",wake
+"Good afternoon, Hero.",wake
+"Good evening, Hero.",wake
+Hero,wake
+"Hero, hey.",wake
+"Wake up, Hero",wake
+Good day.,sleep
+I am satisfied with your service.,sleep
+Thanks.,sleep
+Thank you.,sleep
+You have helped me a lot.,sleep
+Thanks for the help.,sleep
+I guess that is all.,sleep
+You can go back to sleep now.,sleep
+I feel better now.,sleep
+I feel much better now.,sleep
+Thanks for the info.,sleep
+Thanks for the information.,sleep
+Bye.,sleep
+Goodbye.,sleep
+Okay.,sleep
+"Later, Hero",sleep
+"Thanks, Hero",sleep
+Till another time.,sleep
+Till we meet again.,sleep
+Your job here is done.,sleep
+I am okay now,sleep
+I am feeling better now.,sleep
+Call the doctor!,contact
+I need help!,contact
+I need a doctor!,contact
+I am experiencing pain!,contact
+Haaaaaa!,contact
+I think I have overdosed.,contact
+I have missed my doses.,contact
+What is my dosage?,contact
+My head hurts.,contact
+My stomach hurts.,contact
+My head is paining me.,contact
+My stomach is paining me.,contact
+The drug is yet to perform its function.,contact
+I am feeling nauseated.,contact
+I can't get out of bed.,contact
+My temperature has gone up!,contact
+I don't feel to well,contact
+I vomited.,contact
+I think I might need a doctor.,contact
+I think I might need some help.,contact
+"Fuck, the pain unbearable.",contact
+Call the nurse.,contact
+"Somebody, help me",contact
+I don't seem to be getting any better.,contact
+I am injured.,contact
+I seem to have ruptured something.,contact
+I am feeling constipated.,contact
+Who are you?,name
+What is your name?,name
+What should I call you?,name
+Can you tell your name?,name
+What were you made to do?,name
+I would like to understand what you do.,name
+Why is your name Hero?,name
+Explain why you were created.,name
+What tasks can you perform?,name
+What tasks do you perform?,name
+What jobs do you perform?,name
+What tasks do you do?,name
+What jobs can you do?,name
+What functions do you perform?,name
+Tell me about yourself.,name
+Tell me more about yourself.,name
+What work can you do?,name
+Hero is a weird name.,name
+Who am I talking to?,name
+Who is speaking?,name
+Why do you sound like a guy?,name
+Why do you sound guyish?,name
+Who am I speaking with?,name
+Why you?,name
+Explain yourself.,name
+Who made you?,name
+Who created you?,name
+How were you created?,name
+Explain what Hero means,name
+What does Hero mean?,name
+Can you describe what you do?,name
+What are you created to solve?,name
+Describe yourself.,name
+What duties can you perform?,name
+How can you help me?,name
+Describe what you do.,name
+Describe to me what you do.,name
+When next are I to take my pills?,prescription
+When next am I to take my drugs?,prescription
+Remind me when next I am to take my drug?,prescription
+How often am I supposed to take my drugs?,prescription
+I hope I have not missed the time for my medications.,prescription
+What time am I supposed to take my meds?,prescription
+What time am I to take my drugs?,prescription
+How many pills am I take?,prescription
+How much do I take?,prescription
+What is my dosage?,prescription
+What medications did my doctor prescribe?,prescription
+Remind me what drugs I was told to take?,prescription
+Which quantity of drugs shoudl I take?,prescription
+Remind me how my treatment supposed to last?,prescription
+When last did I take my meds?,prescription
+I have forgotten how I am supposed to take this drugs.,prescription
+In what order was I supposed to take the drugs?,prescription
