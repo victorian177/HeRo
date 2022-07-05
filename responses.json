@@ -1,0 +1,25 @@
+{
+    "wake": [
+        "At your service.",
+        "How may I help?",
+        "I am all ears.",
+        "What might you want me to do?"
+    ],
+    "sleep": [
+        "Always happy to help!",
+        "Have a nice day.",
+        "Goodbye."
+    ],
+    "contact": [
+        "Contacting a resident doctor now."
+    ],
+    "name": [
+        "My name is HeRo, the Health Robot created by MicroLabs, ACE. Inspired by the BayMax from Big Hero 6 movie. I can help you in remembering your prescriptions."
+    ],
+    "prescription": [
+        "Your prescription is as follows."
+    ],
+    "no answer": [
+        "Sorry, I don't understand what you are saying."
+    ]
+}
