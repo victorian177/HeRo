@@ -61,8 +61,6 @@ class HeRo:
                 print("Could not request from Google Speech Recognition service")
                 return None
 
-        print("Input taken")
-
         return speech.lower()
 
     def predict(self, speech):
@@ -77,7 +75,4 @@ class HeRo:
             return random.choice(self.responses['no answer'])
         else:
             return random.choice(self.responses[label])
-        
 
-instance = HeRo()
-print(instance.predict("what is your name"))
